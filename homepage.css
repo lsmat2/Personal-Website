@@ -1,0 +1,143 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.frame {
+    margin: auto;
+    max-width: 47.5rem;
+    padding: 1.5rem 1.45em;
+    font-size: 1.1rem;
+    line-height: 34px;
+    letter-spacing: 0.9px;
+}
+
+/* Navbar Styles */
+.navbar {
+    margin: 0;
+    padding: 0;
+    padding-left: 1em;
+    padding-right:1em;
+    display: flex;
+    flex-direction: row;
+    color:rgba(181, 181, 181, 0.918);
+}
+.navbar header{
+    cursor: pointer;
+    font-weight: 500;
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+}
+.nav-elements { /* All properties needed to align items at end of container */
+    display:inherit; 
+    flex-direction: inherit;
+    justify-content: flex-end;
+    flex: 1 1 0%;
+}
+.navbar button {
+    background-color: inherit;
+    color: inherit;
+    cursor: pointer;
+    border: none;
+    font-weight: 300;
+    font-size: 1em;
+    padding-left: 2em;
+    padding-right: 0;
+}
+.navbar button:hover, header:hover {
+    color: rgb(122, 122, 255)
+}
+
+/* Profile Section Styles */
+.profile {
+    display: flex;
+    margin-top: 4.2rem;
+    margin-bottom: 5rem;
+    font-size: 28px;
+    line-height: 2.8rem;
+}
+.profile-text p {
+    display: flex;
+    font-size: 1.2em;
+    line-height: 1.5;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-height: 142px;
+}
+.profile img{
+    width: 140px;
+    height: 140px;
+    margin-left:5px;
+    margin-top:5px;
+    border-radius: 50%;
+}
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to top right, rgb(247, 140, 8), rgb(193, 32, 230)); /* Gradient from bottom-left to top-right */
+    position:absolute;
+    z-index:-2;
+}
+.circle2 {
+    width: 144px;
+    height: 144px;
+    margin-left:3px;
+    margin-top:3px;
+    border-radius: 50%;
+    background: white;
+    position:absolute;
+    z-index:-1;
+}
+/* .profile-text {
+    border-top: 1em;
+    border-right: 0;
+    border-bottom:0;
+    border-left: 5%;
+} */
+
+/* Content Wrapper Styles */
+/* .content-wrapper {
+    padding: 1.2em;
+} */
+
+/* Section Styles */
+#about, #projects, #contact {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #ff9800;
+    font-weight: 700;
+}
+
+p, ul {
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    /* background-color: #1f1f1f; */
+    color: #e0e0e0;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
