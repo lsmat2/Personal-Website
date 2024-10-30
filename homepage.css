@@ -3,7 +3,7 @@
 
 /* General Styles */
 body {
-    background-color: #121212;
+    background-color: #101010;
     color: #e0e0e0;
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -57,19 +57,14 @@ body {
 /* Profile Section Styles */
 .profile {
     display: flex;
-    margin-top: 4.2rem;
-    margin-bottom: 5rem;
-    font-size: 28px;
+    padding-top: 6.2rem;
+    padding-bottom: 6.2rem;
+    font-size: 1.2rem;
     line-height: 2.8rem;
-}
-.profile-text p {
-    display: flex;
-    font-size: 1.2em;
-    line-height: 1.5;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    max-height: 142px;
+    flex-wrap:nowrap;
+    max-height: 150px;
+    margin:0;
 }
 .profile img{
     width: 140px;
@@ -96,12 +91,48 @@ body {
     position:absolute;
     z-index:-1;
 }
-/* .profile-text {
-    border-top: 1em;
-    border-right: 0;
-    border-bottom:0;
-    border-left: 5%;
-} */
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1.5rem;
+    text-align: center;
+}
+.profile-text {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+    width:100%;
+    max-width: 32ch;
+    text-align: left;
+    padding-left:10%;
+    margin:0;
+    color:#b2b2b2;
+    /* Give text a linear gradient */
+    /* background: linear-gradient(to right, #daf0ff, 
+                    #a0b9ff, #92abff, #baf3ff); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;  */
+}
+.profile-text a {
+    color: white;
+}
+.socials {
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin:0;
+    padding-left:10%;
+    width:100%;
+}
+.socials p {
+    padding-right: 10%;
+    margin:0.2em;
+}
+.socials a {
+    text-decoration: none;
+}
 
 /* Content Wrapper Styles */
 /* .content-wrapper {
