@@ -12,7 +12,7 @@ body {
 .frame {
     margin: auto;
     max-width: 47.5rem;
-    padding: 1.5rem 1.45em;
+    padding: 3rem 2.5rem;
     font-size: 1.1rem;
     line-height: 34px;
     letter-spacing: 0.9px;
@@ -66,7 +66,7 @@ body {
     max-height: 150px;
     margin:0;
 }
-.profile img{
+.profile-img{
     width: 140px;
     height: 140px;
     margin-left:5px;
@@ -120,6 +120,7 @@ body {
 }
 .profile-text a:hover {
     color: #ff9800;
+    cursor: pointer;
 }
 .socials {
     display:flex;
@@ -130,39 +131,43 @@ body {
     width:100%;
 }
 .socials p {
-    padding-right: 10%;
+    padding-right: 6%;
     margin:0.2em;
+    align-items: center;
 }
 .socials a {
     text-decoration: none;
+    color:rgba(181, 181, 181, 0.918);
+}
+.socials img {
+    width: 18px;
+    height: 18px;
+    position:relative;
+}
+.instagram:hover{
+    color:rgb(218, 140, 255);
+}
+.linkedin:hover{
+    color:rgb(102, 140, 255);
+}
+.github:hover{
+    color:rgb(209, 209, 209);
 }
 
-/* Content Wrapper Styles */
-/* .content-wrapper {
-    padding: 1.2em;
-} */
-
-/* Section Styles */
-#about, #projects, #contact {
-    margin-bottom: 40px;
-}
-
-h2 {
-    color: #ff9800;
-    font-weight: 700;
-}
-
-p, ul {
+/* Content Section Styles */
+.content-wrapper {
     line-height: 1.6;
-    font-weight: 400;
 }
-
-ul {
-    padding-left: 20px;
+.content-wrapper h2 {
+    color: #ececec;
+    font-weight: 500;
+    letter-spacing: 0.05em;
 }
-
-ul li {
-    margin-bottom: 10px;
+.content-wrapper p {
+    color:rgb(151, 151, 151);
+}
+.about, .contact {
+    margin-bottom: 40px;
 }
 
 /* Footer Styles */
