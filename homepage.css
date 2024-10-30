@@ -118,6 +118,9 @@ body {
 .profile-text a {
     color: white;
 }
+.profile-text a:hover {
+    color: #ff9800;
+}
 .socials {
     display:flex;
     justify-content: flex-start;
